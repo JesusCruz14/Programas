@@ -1,0 +1,121 @@
+body {
+    font-family: 'Garamond', serif;
+    background-color: #f0eae0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#contenido {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    flex: 1;
+    text-align: center;
+}
+
+button:not(:last-child) {
+    margin-right: 15px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+#option1 {
+    background-color: #7D9A9A;
+}
+
+#option2 {
+    background-color: #D3B3C4;
+}
+
+#option3 {
+    background-color: #D1B200;
+}
+
+#option1:hover {
+    background-color: #669b99;
+}
+
+#option2:hover {
+    background-color: #b59ab3;
+}
+
+#option3:hover {
+    background-color: #c1a700;
+}
+
+section {
+    margin-top: 20px;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #444;
+    animation: fadeIn 1s ease-in-out;
+}
+
+input, select {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input:focus, select:focus {
+    border-color: #7D9A9A;
+}
+
+#resultado, #resultado-nombres, #resultado-calculadora {
+    margin-top: 20px;
+    text-align: center;
+    color: #7D9A9A;
+    font-size: 1.3em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

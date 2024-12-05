@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programa Básico</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Programa con 3 Funciones</h1>
+  <button onclick="mostrarSeccion('burbuja')">Método Burbuja</button>
+  <button onclick="mostrarSeccion('nombres')">Ordenar Nombres</button>
+  <button onclick="mostrarSeccion('calculadora')">Calculadora</button>
+
+  <div id="contenido">
+    <!-- Sección Método Burbuja -->
+    <div id="burbuja" class="seccion">
+      <h2>Método Burbuja</h2>
+      Tamaño de la lista: <input id="tamano" type="number"><br>
+      <button onclick="crearLista()">Crear Lista</button>
+      <div id="burbuja-area">
+        <!-- Espacio para inputs generados dinámicamente -->
+      </div>
+      <div id="opciones-burbuja">
+        Orden:
+        <select id="orden">
+          <option value="asc">Ascendente</option>
+          <option value="desc">Descendente</option>
+        </select>
+        <button onclick="ordenarBurbuja()">Ordenar</button>
+      </div>
+      <div id="resultado"></div>
+    </div>
+
+    <!-- Sección Ordenar Nombres -->
+    <div id="nombres" class="seccion">
+      <h2>Ordenar Nombres</h2>
+      Nombre 1: <input class="nombre" type="text"><br>
+      Nombre 2: <input class="nombre" type="text"><br>
+      Nombre 3: <input class="nombre" type="text"><br>
+      Nombre 4: <input class="nombre" type="text"><br>
+      Nombre 5: <input class="nombre" type="text"><br>
+      <button onclick="ordenarNombres()">Ordenar</button>
+      <div id="resultado-nombres"></div>
+    </div>
+
+    <!-- Sección Calculadora -->
+    <div id="calculadora" class="seccion">
+      <h2>Calculadora</h2>
+      Ecuación: <input id="ecuacion" type="text"><br>
+      <button onclick="calcular()">Calcular</button>
+      <div id="resultado-calculadora"></div>
+    </div>
+  </div>
+
+  <script src="funcion.js"></script>
+</body>
+</html>
